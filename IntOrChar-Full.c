@@ -3,7 +3,7 @@
 #include<stdlib.h>
 #include<string.h>
 
-int isvocal(char v);
+int isvowel(char v);
 
 int main(){
 	char arre[100];
@@ -19,7 +19,7 @@ int main(){
 		}
 		else{
 			if(isalpha(arre[i])){
-				a = isvocal(arre[i]);
+				a = isvowel(arre[i]);
 				if(a == 0){
 					printf("El caracter %c es una consonante.\n", arre[i]);
 				}
@@ -35,7 +35,7 @@ int main(){
 		
 	return 0;
 }
-int isvocal(char v){	
+int isvowel(char v){	
 	int i;
 	char vocal[10]={'a','e','i','o','u','A','E','I','O','U'};
 	int a=0;
