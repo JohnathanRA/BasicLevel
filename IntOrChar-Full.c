@@ -6,9 +6,9 @@
 int isvocal(char v);
 
 int main(){
-	char arre[5];
+	char arre[100];
 	int i;
-	int r;
+	int a;
 	
 	printf("Dame una cadena de caracteres (Tu maximo son 100 caracteres): ");
 		scanf("%s", arre);
@@ -19,8 +19,8 @@ int main(){
 		}
 		else{
 			if(isalpha(arre[i])){
-				r = isvocal(arre[i]);
-				if(r == 0){
+				a = isvocal(arre[i]);
+				if(a == 0){
 					printf("El caracter %c es una consonante.\n", arre[i]);
 				}
 				else{
