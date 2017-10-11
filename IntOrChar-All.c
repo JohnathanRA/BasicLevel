@@ -3,10 +3,10 @@
 #include<stdlib.h>
 #include<string.h>
 
-int isvocal(char v);
+int isvowel(char v);
 
 int main(){
-	char arre[10];
+	char arre[100];
 	int i;
 	int r;
 	int b=0;
@@ -21,7 +21,7 @@ int main(){
 			b++;
 		}
 		else{
-			r = isvocal(arre[i]);
+			r = isvowel(arre[i]);
 			if(r == 0){
 				c++;
 		    }
@@ -37,7 +37,7 @@ int main(){
 	
 	return 0;
 }
-int isvocal(char v){	
+int isvowel(char v){	
 	int i;
 	char vocal[10]={'a','e','i','o','u','A','E','I','O','U'};
 	
